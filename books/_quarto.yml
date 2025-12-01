@@ -1,0 +1,55 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "Tools-in-Action"
+  author: "Your Name"
+  chapters:
+    - index.qmd
+    - 01_git.qmd
+    - 02_linux_basics.qmd
+    - 03_shell_essentials.qmd
+    - 04_makefile.qmd
+    - 05_sql_sqlite.qmd
+    - 06_pandas_joins_parquet.qmd
+    - 07_html_scraping.qmd
+    - 08_pytest.qmd
+    - 09_pytorch_miniloop.qmd
+    - 10_quarto_book.qmd
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt  
+execute:
+  echo: true
+  freeze: auto     # cache results so GH Pages builds fast
+
+bibliography: references.bib
+
+
+# project:
+#   type: book
+
+# book:
+#   title: "books"
+#   author: "Norah Jones"
+#   date: "12/1/2025"
+#   chapters:
+#     - index.qmd
+#     - intro.qmd
+#     - summary.qmd
+#     - references.qmd
+
+# bibliography: references.bib
+
+# format:
+#   html:
+#     theme:
+#       - cosmo
+#       - brand
+#   pdf:
+#     documentclass: scrreprt
+
+
+

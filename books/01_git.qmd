@@ -1,0 +1,20 @@
+# Git & GitHub 
+
+```
+# Initialize repo (if starting fresh on local computer)
+git init
+git branch -M main
+git remote add origin https://github.com/<you>/tools-in-action-yourlastname.git
+# For privacy (on local computer)
+git config user.name "your_chosen_nick_name"  # this nick name will appear as the author to each commit
+git config user.email "12345678+your_github_name@users.noreply.github.com" #get your private email from GitHub->Settings->Emails->"Keep my email private"
+git add .
+git commit -m "chore: scaffold Quarto book"
+
+# Create a feature branch, make a change, commit, push, open PR
+git checkout -b feat/sql-chapter
+git add book/05_sql_sqlite.qmd    # you can simply `git add .`
+git commit -m "docs(sql): first join examples"  #change messages accordingly
+git push -u origin feat/sql-chapter  # you can simply `git push`
+# Then open a PR in the GitHub UI (screenshot in your book chapter).
+```
