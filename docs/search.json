@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tools-in-Action",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "01_git.html",
+    "href": "01_git.html",
+    "title": "1  Git & GitHub",
+    "section": "",
+    "text": "# Initialize repo (if starting fresh on local computer)\ngit init\ngit branch -M main\ngit remote add origin https://github.com/&lt;you&gt;/tools-in-action-yourlastname.git\n# For privacy (on local computer)\ngit config user.name \"your_chosen_nick_name\"  # this nick name will appear as the author to each commit\ngit config user.email \"12345678+your_github_name@users.noreply.github.com\" #get your private email from GitHub-&gt;Settings-&gt;Emails-&gt;\"Keep my email private\"\ngit add .\ngit commit -m \"chore: scaffold Quarto book\"\n\n# Create a feature branch, make a change, commit, push, open PR\ngit checkout -b feat/sql-chapter\ngit add book/05_sql_sqlite.qmd    # you can simply `git add .`\ngit commit -m \"docs(sql): first join examples\"  #change messages accordingly\ngit push -u origin feat/sql-chapter  # you can simply `git push`\n# Then open a PR in the GitHub UI (screenshot in your book chapter).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git & GitHub</span>"
+    ]
+  }
+]
